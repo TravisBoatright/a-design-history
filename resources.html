@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    
   <title> </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
     
+  <style>
+      #menu-toggle:checked + #menu {
+            display: block;
+      }
+  </style>
+  
+  </head>
   <body class="helvetica">
 
-    <header class="bg-black-80 static w-100 ph3 pv3 pv4-ns ph4-m ph5-l shadow-2">
+    <header class="flex flex-wrap items-center bg-black-80 dn-l">
+      
+            <label for="menu-toggle" class="dn-l w-100 pv3">
+              <svg class="cover h2 w2 fr pr4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </label>
+
+            <input type="checkbox" class="dn" id="menu-toggle" />
+      
+            <div class="dn flex-l static w-100 pv3 pv4-ns pv4-m ph5-l shadow-2" id="menu">
+                   
+                <nav class="f6 fw6 ttu tracked">
+                   
+                  <div class="dn">
+                  <h1>A New Design History</h1>
+                  </div>
+                    
+                    <ul class="list flex-l ph7-l tc-l">
+                        <li class="pb4 pb4-m pb0-l">
+                            <a href="/index.html" class="link underline-hover white dim pr3-l">Home</a>
+                        </li>
+                        <li class="pb4 pb4-m pb0-l">
+                            <a href="#" class="link underline-hover white dim pr3-l">About</a>
+                        </li>
+                        <li class="pb4 pb4-m pb0-l">
+                            <a href="/resources.html" class="link underline-hover white dim pr3-l">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link underline-hover white dim">Contact</a>
+                        </li>
+                    </ul>
+                  
+                </nav>
+            </div>
+
+    </header>
+    
+    <header class="bg-black-80 static w-100 ph3 pv3 pv4-ns ph4-m ph5-l shadow-2 dn dn-ns dib-l">
         <nav class="f6 fw6 ttu tracked">
           <h4 class="gold dib mr3">A New Design History</h4>
           <h4 class="white-20 dib mr3">|</h4>
